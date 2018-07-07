@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- TODO: 連結Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- TODO: 客製化Bootstrap CSS -->
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <title>Jordan Tseng</title>
+</head>
+
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar">
+        <img id="menuBtn" src="./image/icon-menu.png" alt="menu">
+    </nav>
+
+    <div class="menu">
+        <img id="closeBtn" src="./image/icon-menu.png" alt="menu">
+    </div>
+    <div class="dark-cover"></div>
+    <div class="up">
+        <img id="upBtn" src="./image/up.png" alt="up">
+    </div>
+    <!-- nav end -->
+    <!-- Header Start -->
+    <header class="header">
+        <div class="row header-row  ">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 logo-lg">
+                <div class="scroll-img logo"></div>
+                <div class="intro text-center">
+                    <p>這是我的一個練習網頁</p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- sectionNews Start-->
+    <div class="sectionNews">
+        <div class="row sectionNews-title">
+            <div class="col-md-4 title-News">
+                <h1>News</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center section-box">
+            <div class="col-md-8">
+                <div id="carouselNews" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselNews" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselNews" data-slide-to="1"></li>
+                        <li data-target="#carouselNews" data-slide-to="2"></li>
+
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row ">
+                                <div class="col-md-4 news-box">
+                                    <div class="blank"></div>
+                                    <h1>BabyRider</h1>
+                                    <p>
+                                        最源頭我們是要做一台符合台灣都市人生活所需的單車。但是經過調查與設計過後發現，現今好看的單車設計脫離不了其三角架構，且也非我們所專長。我們回過頭看到都市其實本身從一段時間之前就多出了一群單車，也就是ＵＢＩＫＥ。何不把重心放在上面，反而也許會對社會上的需求有更多貢獻。
+                                    </p>
+                                </div>
+                                <div id="carouselIamge1" class="col-md-8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 news-box">
+                                    <div class="blank"></div>
+                                    <h1>木石</h1>
+                                    <p>
+                                        這是一件希望透過設計產品傳達過去故事的案子，而我希望透過這項設計傳達我以前在山區所遇到的落石山崩，樹木滾落在面前的景象。 為了強調其危機感，我選擇把椅子抽高，脫離一般的想像範圍，讓使用者要乘坐上去時感受到緊張。但是為了穩當乘坐，在下方支架還是焊接上結構以及在椅面後方設置椅背，避免掉落受傷。
+                                    </p>
+                                </div>
+                                <div id="carouselIamge2" class="col-md-8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 news-box">
+                                    <div class="blank"></div>
+                                    <h1>WarmHole</h1>
+                                    <p>
+                                        藉由瓦愣紙作材質媒介，同時也能在被淘汰後，回收再利用。並且藉由層層堆疊的 方式，也可以降低運輸量，當消費者購買回家後，再自行拼裝完成，過程的樂趣與辛勞是單純購買燈具所不同的。 過程中反覆測試厚度與壓製後的質感，在透光性與曲線觀感中去作調配取捨，最後選用3mm後的瓦愣紙。
+                                    </p>
+                                </div>
+                                <div id="carouselIamge3" class="col-md-8">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselNews" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselNews" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- SectionAbout Start -->
+    <div class="sectionAbout">
+        <div class="container section-box">
+            <div class="section-title text-center mb-5 text-white">
+                <p>ABOUT</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 iamge-Jordan-box">
+                    <img class="iamge-Jordan" src="./image/Jordan.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="name">Jordan Tseng</h3>
+                    <h4 class="Jordan-title">Designer</h4>
+                    <p>It's definitely the best time saving tools we have purchased in the very long time. It's awesome, really.
+                        I can't say enough about how well it's tailored to the needs of their product solutions. Our team
+                        has been using tools developed by other companies for 5 years before I choose this one, I will said
+                        it better than the others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SectionAbout End -->
+    <!-- SectionDesign Start -->
+
+    <div class="sectionDesign section-box">
+        <div class="container-box">
+            <div class="row designImage-box">
+                <div id="designImage1" class="col-md-4 designImage-s">
+                    <div class="designImage-name">
+                        <h3>Baby Righter</h3>
+                        <p>Baby seat for bicycle</p>
+                        <div class="more ">
+                            <p>view more</p>
+                            <div>
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="designImage2" class="col-md-8 designImage-l">
+                    <div class="designImage-name">
+                        <h3>Baby Righter</h3>
+                        <p>Baby seat for bicycle</p>
+                        <div class="more">
+                            <p>view more</p>
+                            <div>
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover"></div>
+                </div>
+                <div id="designImage3" class="col-md-8 designImage-l">
+                    <div class="designImage-name">
+                        <h3>Baby Righter</h3>
+                        <p>Baby seat for bicycle</p>
+                        <div class="more">
+                            <p>view more</p>
+                            <div>
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover"></div>
+                </div>
+                <div id="designImage4" class="col-md-4 designImage-s">
+                    <div class="designImage-name">
+                        <h3>Baby Righter</h3>
+                        <p>Baby seat for bicycle</p>
+                        <div class="more ">
+                            <p>view more</p>
+                            <div>
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SectionDesign End -->
+    <!-- SectionArticle Start -->
+    <div class="sectionArticle">
+        <div class="section-title-s text-center">
+            <p>Arctial</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 midleline"></div>
+            <div class="col-md-6 "></div>
+        </div>
+        <div class="container-box">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="article"></div>
+                </div>
+                <div class="col-md-4 articleBox-midle">
+                    <div class="article"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="article"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SectionArticle End -->
+    <!-- SectionPractice Start -->
+    <div class="sectionPractice">
+        <div class="section-title text-center">
+            <p>Practice</p>
+        </div>
+        <div class="container-box section-box">
+
+        </div>
+    </div>
+    <!-- SectionPractice End -->
+    <!-- Footer Start -->
+    <footer id="footer" class="pt-5 text-black ">
+        <!-- TODO: 設定以下四塊footer-list在電腦螢幕開啟時排成一個橫排 -->
+        <div class="container">
+            <div class="row">
+                <div class="footer-list col-md-3 text-center">
+                    <h2>Contact Me</h4>
+                        <a class="text-black" href="#">lionmo2391@gmail.com</a>
+                </div>
+                <div class="footer-list col-md-3 text-center ">
+                    <h2 class="text-uppercase">Company</h5>
+                        <ul>
+                            <li>
+                                <a class="text-black" href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Press</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Bonus</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer-list col-md-3 text-center">
+                    <h2 class="text-uppercase">Design</h5>
+                        <ul>
+                            <li>
+                                <a class="text-black" href="#">Product Design</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Comersial Design</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Web Design</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer-list col-md-3 text-center">
+                    <h2 class="text-uppercase">Resource</h5>
+                        <ul>
+                            <li>
+                                <a class="text-black" href="#">Guilde</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Help Center</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">API</a>
+                            </li>
+                            <li>
+                                <a class="text-black" href="#">Events</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end  mt-5 py-2">
+            <p class="text-center">Jordan </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

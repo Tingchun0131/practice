@@ -1,0 +1,387 @@
+/* 在此撰寫此專案的CSS Style */
+
+/*=============================================
+=                  General                    =
+=============================================*/
+
+.section-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+body {
+    margin: 0;
+}
+
+.container-box {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*=============================================
+=                  nav                        =
+=============================================*/
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+#menuBtn,
+#closeBtn {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#menuBtn:hover,
+#closeBtn:hover {
+    opacity: 0.5;
+}
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    transition: all .5s ease;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.dark-cover {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background: black;
+    opacity: 0;
+    transition: all .5s ease;
+    /* 取消其可被點擊的特性 */
+    pointer-events: none;
+}
+
+.dark-cover.active {
+    opacity: 0.7;
+    /* 使黑背景可被點擊 */
+    pointer-events: auto;
+}
+
+.up {
+    position: fixed;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+
+#upBtn {
+    position: relative;
+    width: 50px;
+    bottom: 0;
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+.header {
+    background-color: rgb(201, 200, 200);
+    height: 800px;
+}
+
+.logo-lg,
+.header-row {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo {
+    background-image: url(../image/Jordan-logo.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.scroll-img {
+    /* position: fixed; */
+    position: absolute;
+    /* width: 200px; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1000;
+    transition: all .4s ease;
+}
+
+.scroll-img.scrolling {
+    width: 100px;
+    height: 100px;
+    right: 100%;
+    left: 40px;
+    bottom: calc(100% - 150px);
+    position: fixed;
+}
+
+.header>.intro {
+    position: relative;
+    bottom: 0;
+}
+
+/*=============================================
+=                  sectionNews                     =
+=============================================*/
+
+.sectionNews {
+    width: 100%;
+    height: auto;
+}
+
+sectionNews-title {
+    position: relative;
+}
+
+.title-News {
+    position: relative;
+    width: 20%;
+    top: 220px;
+    left: 18%;
+    z-index: 1500;
+}
+
+.blank {
+    width: 100%;
+    height: 100px;
+}
+
+.news-box {
+    padding: 50px;
+    background: rgb(191, 121, 94);
+    color: rgb(122, 167, 235);
+}
+
+.title-News>h1 {
+    font-size: 80px;
+    font-family: Arial;
+    color: white;
+}
+
+.section-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+[id^="carouselIamge"] {
+    height: 500px;
+    background-size: cover;
+}
+
+#carouselIamge1 {
+    background-image: url(../image/babyseat-main.jpg);
+}
+
+#carouselIamge2 {
+    background-image: url(../image/design-flower.jpg);
+}
+
+#carouselIamge3 {
+    background-image: url(../image/design-light.jpg);
+}
+
+/*=============================================
+=                  sectionAbout                  =
+=============================================*/
+
+.sectionAbout {
+    widows: 100%;
+    height: auto;
+    background: rgb(201, 200, 200);
+}
+
+.section-title>p {
+    font-size: 20px;
+}
+
+.iamge-Jordan {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.iamge-Jordan-box {
+    padding-left: 100;
+}
+
+.Jordan-title {
+    font-size: 24px;
+}
+
+.name {
+    font-size: 36px;
+}
+
+/*=============================================
+=                  sectionDesign                 =
+=============================================*/
+
+.sectionDesign {
+    widows: 100%;
+    height: auto;
+}
+
+[id^="designImage"] {
+    height: 400px;
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    transition:all .5s ease;
+}
+
+#designImage1 {
+    background-image: url(../image/babyseat-main.jpg);
+    filter: grayscale(100%);
+}
+
+#designImage2 {
+    background-image: url(../image/design-flower.jpg);
+}
+
+#designImage3 {
+    background-image: url(../image/design-light.jpg);
+}
+
+#designImage4 {
+    background-image: url(../image/Jordan.jpg);
+    filter: grayscale(100%);
+}
+[id^='designImage']:hover {
+    background-size: 120%;
+    filter: grayscale(0%);
+    position: relative;
+}
+
+.designImage-s>.designImage-name {
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.designImage-l>.designImage-name {
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+
+}
+.designImage-s>.designImage-name>.more{
+    background:black;
+    height:30px;
+    width:100px;
+    
+}
+
+.designImage-s>.designImage-name>.more>p,
+.designImage-s>.designImage-name>.more>div {
+    display: inline-block;
+    
+    color:white;
+    padding-left:5px;
+}
+.designImage-l>.designImage-name>.more{
+    background:white;
+    height:30px;
+    width:100px;
+    
+
+}
+
+.designImage-l>.designImage-name>.more>p,
+.designImage-l>.designImage-name>.more>div {
+    display: inline-block;
+    color:black;
+    padding-left:5px;
+}
+.cover {
+    /* 設定重疊在圖片上的區塊 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* 預設為透明 */
+    opacity: 0;
+    text-align: center;
+    padding: 100px 0;
+    transition: all .5s ease
+  }
+  
+  /* hover以後提高不透明度 */
+  [id^='designImage']:hover .cover {
+    opacity: 0.2;
+  }
+/*=============================================
+=                  sectionArticle             =
+=============================================*/
+.articleBox-midle{
+    background:rgb(216, 216, 216);
+}
+.article{
+    width:100%;
+    height:500px;
+}
+.midleline{
+    border-right: 2px solid rgb(216,216,216);
+    height:50px;
+}
+.sectionArticle>.container-box>.row{
+    border:1px solid rgb(216,216,216);
+}
+.sectionArticle{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+/*=============================================
+=                  Footer                     =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.text-black {
+    color: black;
+}
